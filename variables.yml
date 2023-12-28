@@ -1,0 +1,11 @@
+- name: Variables
+  hosts: localhost
+  vars:
+    nam: "Ram"
+    age: 28
+  tasks:
+  - name: learning variables
+    vars:
+      nam: "sai"
+    ansible.builtin.debug:
+    msg: "my name is {{nam}} and my age is {{age}}"

@@ -1,0 +1,5 @@
+- name: Installing ngnix
+  hosts: web
+  tasks:
+  - name: install ngnix package
+    ansible.builtin.package

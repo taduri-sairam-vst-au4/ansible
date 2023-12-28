@@ -4,8 +4,8 @@
     age: "34"
     nam: "sai"
   tasks: 
-  - name: ping the server
-    vars:
-    nam: "ram"
-    ansible.builtin.debug:
+  -  name: ping the server
+      vars:
+      nam: "ram"
+     ansible.builtin.debug:
       msg: "Hi my name is {{nam}}"

@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     nam: "Ram"
-    age: 28
+    age: "28"
   tasks:
   - name: learning variables
     vars:

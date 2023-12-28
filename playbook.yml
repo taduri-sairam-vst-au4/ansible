@@ -1,9 +1,5 @@
 - name: ping playbook
-  hosts: localhost
-  vars:
-    age: "34"
-    nam: "sai"
+  hosts: web
   tasks: 
   - name: ping the server
-    ansible.builtin.debug:
-      msg: "Hi my name is {{nam}}"
+    ansible.builtin.ping:

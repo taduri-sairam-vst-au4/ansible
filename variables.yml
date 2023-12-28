@@ -1,11 +1,9 @@
-- name: Variables
+- name: ping playbook
   hosts: localhost
   vars:
-    nam: "Ram"
-    age: "28"
-  tasks:
-  - name: learning variables
-    vars:
-      nam: "sai"
+    age: "34"
+    nam: "sai"
+  tasks: 
+  - name: ping the server
     ansible.builtin.debug:
-    msg: "my name is {{nam}} and my age is {{age}}"
+      msg: "Hi my name is {{nam}}"
